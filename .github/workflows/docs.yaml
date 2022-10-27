@@ -10,20 +10,23 @@ jobs:
     steps:
       - name: Git checkout
         uses: actions/checkout@v3
-
-      - name: Update theme
-        run: git submodule update --init --recursive
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: '0.91.2'
+          extended: true
 
       - name: Build
-        run: hugo --minify
+        run: |
+          cd docs
+          hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./public
+          publish_dir: ./docs/public
