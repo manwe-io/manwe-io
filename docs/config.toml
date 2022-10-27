@@ -1,0 +1,32 @@
+baseURL = "https://{YOUR_GITHUB_USERNAME}.github.io/{YOUR_GITHUB_REPO}"
+languageCode = "en-us"
+title = "{YOUR_GITHUB_REPO}"
+theme = "learn"
+RelativeURLs=true
+CanonifyURLs=true
+
+[params]
+  pygmentsCodeFences = true
+  pygmentsStyle="monokai"
+    editURL = ""
+  author = "{YOUR_GITHUB_USERNAME}"
+  description = "Documentation for {YOUR_GITHUB_REPO}"
+  showVisitedLinks = false
+  disableSearch = false
+  disableAssetsBusting = false
+  disableInlineCopyToClipBoard = false
+  disableShortcutsTitle = false
+  disableLanguageSwitchingButton = false
+  disableBreadcrumb = true
+  disableNextPrev = false
+  ordersectionsby = "weight"
+  themeVariant = "green"
+
+[[menu.shortcuts]] 
+  name = "<i class='fab fa-github'></i> Github repo"
+  identifier = "ds"
+  url = "https://github.com/{YOUR_GITHUB_USERNAME}/{YOUR_GITHUB_REPO}"
+  weight = 10
+
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
