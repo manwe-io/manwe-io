@@ -1,6 +1,0 @@
-[submodule "hugograyscale"]
-	path = themes/hugograyscale
-	url = git@github.com:runningstream/hugograyscale.git
-[submodule "manwe"]
-	path = public
-	url = git@github.com:manwe-io/manwe.github.io.git
