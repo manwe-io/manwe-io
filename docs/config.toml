@@ -1,6 +1,6 @@
-baseURL = "https://{YOUR_GITHUB_USERNAME}.github.io/{YOUR_GITHUB_REPO}"
+baseURL = "https://manwe-io.github.io/"
 languageCode = "en-us"
-title = "{YOUR_GITHUB_REPO}"
+title = "Manwe Security Consulting"
 theme = "learn"
 RelativeURLs=true
 CanonifyURLs=true
@@ -9,8 +9,8 @@ CanonifyURLs=true
   pygmentsCodeFences = true
   pygmentsStyle="monokai"
     editURL = ""
-  author = "{YOUR_GITHUB_USERNAME}"
-  description = "Documentation for {YOUR_GITHUB_REPO}"
+  author = "Wes Widner"
+  description = "Documentation for Manwe"
   showVisitedLinks = false
   disableSearch = false
   disableAssetsBusting = false
@@ -25,7 +25,7 @@ CanonifyURLs=true
 [[menu.shortcuts]] 
   name = "<i class='fab fa-github'></i> Github repo"
   identifier = "ds"
-  url = "https://github.com/{YOUR_GITHUB_USERNAME}/{YOUR_GITHUB_REPO}"
+  url = "https://github.com/manwe-io/manwe-io"
   weight = 10
 
 [outputs]
