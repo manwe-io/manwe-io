@@ -1,5 +1,5 @@
-run-docs: ## Run in development mode
-	cd docs && hugo serve -D
+develop: ## Run in development mode
+	hugo serve -D
 
-docs: ## Build the site
-	cd docs && hugo -t learn -d public --gc --minify --cleanDestinationDir
+build: ## Build the site
+	hugo -t learn -d public --gc --minify --cleanDestinationDir
