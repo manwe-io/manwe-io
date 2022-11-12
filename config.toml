@@ -20,7 +20,7 @@ CanonifyURLs=true
   disableBreadcrumb = true
   disableNextPrev = false
   ordersectionsby = "weight"
-  themeVariant = "green"
+  themeVariant = "manwe"
 
 [[menu.shortcuts]] 
   name = "<i class='fab fa-github'></i> Github repo"
